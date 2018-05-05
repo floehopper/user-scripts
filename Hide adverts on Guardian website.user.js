@@ -12,7 +12,7 @@
     'use strict';
 
     const body = document.querySelector("body");
-    const ads = body.querySelectorAll('*[data-link-name*="ad"]');
+    const ads = body.querySelectorAll('.ad-slot');
     ads.forEach(function(e) {
         e.style.display = "none";
     });
