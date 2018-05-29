@@ -8,12 +8,24 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
-
+function hideAds() {
     const body = document.querySelector("body");
     const ads = body.querySelectorAll('.ad-slot');
     ads.forEach(function(e) {
+        console.log('hiding ad');
         e.style.display = "none";
     });
+};
+
+function continuallyHideAds() {
+    setTimeout(function() {
+        hideAds();
+        continuallyHideAds();
+    }, 1000);
+}
+
+(function() {
+    'use strict';
+
+    continuallyHideAds();
 })();
