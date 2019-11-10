@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hide promoted tweets on Twitter
+// @name         Twitter - Hide promoted tweets
 // @namespace    http://jamesmead.org/
 // @version      0.1
 // @description  Hide the annoying promoted tweets on Twitter

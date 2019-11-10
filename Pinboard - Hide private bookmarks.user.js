@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hide private Pinboard bookmarks
+// @name         Pinboard - Hide private bookmarks
 // @namespace    http://jamesmead.org/
 // @version      0.1
 // @description  Hide private Pinboard bookmarks by default

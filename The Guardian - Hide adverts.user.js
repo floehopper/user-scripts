@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hide adverts on Guardian website
+// @name         The Guardian - Hide adverts
 // @namespace    http://jamesmead.org/
 // @version      0.1
 // @description  Hide adverts on Guardian website
