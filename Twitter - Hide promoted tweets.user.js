@@ -11,5 +11,9 @@
 (function() {
     'use strict';
 
-    $('span.Icon--promoted').closest('.tweet').hide();
+    const promotedTweets = document.getElementsByClassName('promoted-tweet');
+    for(var i = 0; i < promotedTweets.length; i++) {
+      promotedTweets.item(i).style.display = 'none';
+    }
+    console.log('Promoted tweets hidden');
 })();
