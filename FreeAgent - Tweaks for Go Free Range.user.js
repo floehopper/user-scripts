@@ -13,10 +13,11 @@
   'use strict';
 
   const select = document.getElementById("report_user_id");
-  for (const option of select.children) {
-    console.log(option);
-    if (!["Chris Lowis", "Chris Roos", "James Mead"].includes(option.innerText)) {
-      option.hidden = true
+  if (select) {
+    for (const option of select.children) {
+      if (!["Chris Lowis", "Chris Roos", "James Mead"].includes(option.innerText)) {
+        option.hidden = true
+      };
     };
   };
 })();
