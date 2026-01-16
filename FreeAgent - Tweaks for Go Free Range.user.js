@@ -12,6 +12,7 @@
 (function() {
   'use strict';
 
+  // only include active GFR users in timesheet reporting
   const select = document.getElementById("report_user_id");
   if (select) {
     for (const option of select.children) {
@@ -20,4 +21,14 @@
       };
     };
   };
+
+  // highlight bank transactions marked for review that have "TODO" in their description
+  const bankTxns = document.querySelectorAll('tbody.BankTransaction');
+  const partialExplanations = Array.from(bankTxns).flatMap(tbody => {
+    return Array.from(tbody.querySelectorAll('tr.marked_for_review')).filter(tr => {
+      const link = tr.querySelector('a.BankTransaction-description');
+      return link && link.textContent.includes('TODO');
+    });
+  });
+  partialExplanations.forEach(a => { a.style.backgroundColor = 'yellow'; });
 })();
