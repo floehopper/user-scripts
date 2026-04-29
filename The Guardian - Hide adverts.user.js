@@ -15,6 +15,9 @@ function hideAds() {
         console.log('hiding ad');
         e.style.display = "none";
     });
+
+    const stickyFooter = body.querySelector("aside.dcr-syuney");
+    stickyFooter.style.display = "none";
 };
 
 function continuallyHideAds() {
