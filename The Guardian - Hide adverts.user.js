@@ -16,7 +16,7 @@ function hideAds() {
         e.style.display = "none";
     });
 
-    const stickyFooter = body.querySelector("aside.dcr-syuney");
+    const stickyFooter = Array.from(body.querySelectorAll("aside")).pop();
     stickyFooter.style.display = "none";
 };
 
@@ -32,3 +32,4 @@ function continuallyHideAds() {
 
     continuallyHideAds();
 })();
+
